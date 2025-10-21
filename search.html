@@ -143,15 +143,17 @@
     box-shadow: 0 0 15px #ff0000;
   }
 
-  #content {
-    margin-top: 10px;
-    height: 600px;
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
-    background: #0a0000;
-    border: 1px solid #330000;
-  }
+#content {
+  flex: 1;
+  height: calc(100vh - 180px); /* Adjust based on your topBar height */
+  margin-top: 10px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+  background: #0a0000;
+  border: 1px solid #330000;
+}
+
 
   iframe {
     width: 100%;
@@ -164,7 +166,6 @@
 <body>
 
 <div id="topBar">
-  DEMON search
   <div id="tabs"></div>
   <div id="addressContainer">
     <input type="text" id="addressBar" placeholder="Enter URL and press Enter" onkeydown="if(event.key==='Enter'){navigateToAddress();}">
@@ -299,4 +300,3 @@
 
 </body>
 </html>
-
