@@ -6,6 +6,27 @@
 <title>DEMON</title>
 <script src="engine.js"></script>
 <style>
+button, input[type="button"], input[type="submit"] {
+  background-color: black;
+  color: red;
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 15px red;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: red;
+  color: black;
+  box-shadow: 0 0 25px red, 0 0 40px red;
+  transform: scale(1.05);
+}
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
   body {
@@ -164,7 +185,7 @@
 
 </head>
 <body>
-<button onclick="window.open('https://demonzero.space/', '_blank')">DEMON browser</button>
+<button onclick="window.open('https://sites.google.com/view/demonlinks/', '_blank')">DEMON browser</button>
 <div id="topBar">
   <div id="tabs"></div>
   <div id="addressContainer">
@@ -300,5 +321,6 @@
 
 </body>
 </html>
+
 
 
